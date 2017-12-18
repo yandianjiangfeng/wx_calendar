@@ -1,0 +1,72 @@
+/**index.wxss**/
+.grow{
+  flex-grow: 1;
+}
+/*---日历部分  */
+.calender_box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 48rpx;
+  padding: 48rpx 38rpx 20rpx 40rpx; 
+  border-top: solid #eee  1rpx ;
+  border-bottom: solid #eee  1rpx ;
+}
+.weeks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  color:#878787;
+}
+.week {
+    text-align: center;
+    font-size: 36rpx;  
+}
+.days {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.grid {
+    width: 96rpx;
+    height: 96rpx;
+}
+.filledGrid{
+  width: 96rpx;
+  height: 96rpx;
+  align-items: center;
+  justify-content: center;
+}
+.day {
+    width: 60rpx;
+    height: 60rpx;
+    color: #5D84EC;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-weight: 900;
+    
+}
+/*选中日期  */
+.choose_day .day{
+    border-radius:60%;
+    color: #fff;
+    background:#5D84EC;
+}
+
+.top{
+  height: 60px;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn{
+  padding: 8rpx 16rpx;
+  background:#5D84EC;
+  color:#fff;
+}

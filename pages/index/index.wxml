@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top" > 
+    <view class='btn' bindtap='prev'>prev</view>
+    <view>  {{cur_year}}年{{cur_month}}月{{cur_day}}</view>
+    <view class='btn' bindtap='next'>next</view>
+  </view>
+    <!--日历部分  -->
+  <view class="calender_box">
+      <view class="weeks">
+        <view class="week grow" wx:for="{{weeks_ch}}" wx:key="{{index}}">{{item}}</view>         
+      </view>
+      <view class="days" bindtouchstart="touchStart" bindtouchend="touchEnd">
+        <view  class="grid" wx:if="{{hasEmptyGrid}}" wx:for="{{empytGrids}}" wx:key="{{index}}" ></view>
+        <view  class="filledGrid {{item.choosed ? 'choose_day' : ''}}" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="tapDayItem">
+          <view  class="day">{{item.day}}</view>        
+        </view>  
+      </view>
+  </view>
+</view>
+
+<view style='color:#ccc;font-size:28rpx;text-align:center;margin-top:20rpx;'>注：左右滑动可切换月份</view>
