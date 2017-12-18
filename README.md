@@ -13,4 +13,4 @@
 
 #### 效果图
 
-![](https://github.com/yandianjiangfeng/wx_calendar/effect_picture.png)  
+![](https://github.com/yandianjiangfeng/wx_calendar/blob/master/effect_picture.png)  
